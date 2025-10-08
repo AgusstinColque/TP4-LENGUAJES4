@@ -36,6 +36,18 @@ export default function Navbar() {
       >
         Contacto
       </NavLink>
+
+      {/* 🔹 Nuevo enlace para la API */}
+      <NavLink
+        to="/api"
+        style={({ isActive }) => ({
+          color: isActive ? "blue" : "white",
+          textDecoration: "none",
+          fontWeight: isActive ? "bold" : "normal",
+        })}
+      >
+        API
+      </NavLink>
     </nav>
   );
 }
